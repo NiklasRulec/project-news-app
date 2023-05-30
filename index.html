@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="search">
+      <h1>NEWS APP</h1>
+      <!-- ! ++++++++++ SEARCH FORM ++++++++++ -->
+      <form onsubmit="searchFunction();return false">
+        <!-- ! ++++++++++ SERACH WORD ++++++++++ -->
+        <article>
+          <label>Suchbegriff</label>
+          <input
+            type="text"
+            id="search-word"
+            placeholder="Suchbegriff"
+            required
+          />
+        </article>
+        <!-- ! ++++++++++ LANGUAGE ++++++++++ -->
+        <article>
+          <label>Sprache</label>
+          <select id="language">
+            <option value="ar">Arabisch</option>
+            <option value="de" selected>Deutsch</option>
+            <option value="en">Englisch</option>
+            <option value="es">Spanisch</option>
+            <option value="fr">Französisch</option>
+            <option value="he">he</option>
+            <option value="it">Italienisch</option>
+            <option value="nl">Niederländisch</option>
+            <option value="no">no</option>
+            <option value="pt">pt</option>
+            <option value="ru">ru</option>
+            <option value="sv">sv</option>
+            <option value="ud">ud</option>
+            <option value="zh">zh</option>
+          </select>
+        </article>
+        <!-- ! ++++++++++ SORT ++++++++++ -->
+        <article>
+          <label>Sortieren nach</label>
+          <select id="sort-by">
+            <option value="relevancy">Relevanz</option>
+            <option value="popularity">Popularität</option>
+            <option value="publishedAt">Neueste zuerst</option>
+          </select>
+        </article>
+        <!-- ! ++++++++++ DATE ++++++++++ -->
+        <!-- <article>
+      <label>Datum ab :</label>
+      <input type="date" id="date-from" />
+    </article>
+    <article>
+      <label>Datum bis :</label>
+      <input type="date" id="date-to" />
+    </article> -->
+        <input type="submit" value="Suchen" />
+      </form>
+    </section>
+    <section class="articles">
+      <article class="article-card">
+        <h2>Test</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ab
+          reiciendis necessitatibus odio laudantium, beatae consequatur, magnam
+          nobis id molestias illo, voluptas voluptatum iste obcaecati voluptatem
+          velit culpa labore sint.
+        </p>
+        <a href="#">Zum Artikel</a>
+      </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
