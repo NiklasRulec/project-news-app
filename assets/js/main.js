@@ -1,4 +1,5 @@
 let key = "ccd18072d2c94b6cb1d01e1f680ff822";
+let http = "http";
 
 const searchInput = document.querySelector("#search-word");
 const languageInput = document.querySelector("#language");
