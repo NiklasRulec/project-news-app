@@ -36,18 +36,18 @@ html {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin: 2rem;
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 label,
 p,
 a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 img {
@@ -58,7 +58,7 @@ img {
 
 .search {
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
   background-color: var(--light);
   display: flex;
   align-items: center;
@@ -69,8 +69,8 @@ img {
 /* $ ++++++++++ FORM ++++++++++ */
 
 form {
-  width: 40rem;
-  height: 20rem;
+  width: 35rem;
+  height: 30rem;
   border: 2px solid black;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -120,7 +120,7 @@ input[type="submit"]:hover {
 
 .articles {
   width: 100vw;
-  min-height: 70vh;
+  min-height: 65vh;
   background-color: var(--light);
   display: flex;
   align-items: center;
@@ -130,7 +130,7 @@ input[type="submit"]:hover {
 
 .article-card {
   width: 40rem;
-  height: 55rem;
+  height: 50rem;
   margin: 2rem;
   border: 2px solid black;
   border-radius: 0.5rem;
