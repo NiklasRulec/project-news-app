@@ -80,6 +80,14 @@ form {
   flex-direction: column;
 }
 
+form article {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 label {
   margin: 0 1rem;
 }

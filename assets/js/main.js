@@ -1,5 +1,4 @@
 let key = "ccd18072d2c94b6cb1d01e1f680ff822";
-let http = "http";
 
 const searchInput = document.querySelector("#search-word");
 const languageInput = document.querySelector("#language");
@@ -10,6 +9,9 @@ const articleGallery = document.querySelector(".articles");
 
 const searchFunction = () => {
   event.preventDefault();
+  //   ! Vorherige Artikel löschen
+  articleGallery.innerHTML = "";
+
   let searchWord = searchInput.value;
   console.log(searchWord);
   let language = languageInput.value;
@@ -22,7 +24,7 @@ const searchFunction = () => {
   //   console.log(dateTo);
 
   fetch(
-    `${http}://newsapi.org/v2/everything?q=${searchWord}&sortBy=${sortBy}&language=${language}&apiKey=${key}`
+    `https://newsapi.org/v2/everything?q=${searchWord}&sortBy=${sortBy}&language=${language}&apiKey=${key}`
   )
     .then((response) => response.json())
     .then((data) => {
