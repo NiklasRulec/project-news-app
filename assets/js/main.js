@@ -21,13 +21,13 @@ const searchFunction = () => {
   //   console.log(dateTo);
 
   fetch(
-    `https://newsapi.org/v2/everything?q=${searchWord}&sortBy=${sortBy}&language=${language}&apiKey=${key}`
+    `http://newsapi.org/v2/everything?q=${searchWord}&sortBy=${sortBy}&language=${language}&apiKey=${key}`
   )
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
       for (i = 0; data.articles.length > i; i++) {
-        if (i < 11) {
+        if (i < 12) {
           //   ! Neue Artikel Karte generieren
           let newArticleCard = document.createElement("article");
           newArticleCard.classList.add("article-card");
@@ -59,7 +59,7 @@ const searchFunction = () => {
           //   ! Artikel Karte zum Dom hinzufügen
           articleGallery.appendChild(newArticleCard);
         } else {
-          console.log("max 10");
+          console.log("max 12");
         }
       }
     });
